@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels Combined</title>
+
+    <!--opengraph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hotels Combined">
+    <meta property="og:url" content="http://hotelscombined.dothome.co.kr">
+    <meta property="og:image" content="../images/common/hc_og.jpg">
+    <meta property="og:description" content="500만개 호텔 한번에 비교 예약, 최저가 보장!">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/common/hc_fav.ico">
+
+    <!-- font -->
+    <link rel="stylesheet" href="../css/font.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <!-- js -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="../index.html"><img src="../images/common/logo.png" alt="Hotels Combined"></a></h1>
+                <nav>
+                    <ul class="gnb clearfix">
+                        <li>
+                            <img src="../images/common/icon_hotel.svg" alt="호텔 예약 페이지  아이콘"> <img
+                                src="../images/common/arrow_down.svg" alt="더보기 버튼"></a>
+                            <ul class="home_other">
+                                <li>
+                                    <a href="../index.html">
+                                        <img src="../images/common/icon_hotel.svg" alt="호텔 예약 페이지 아이콘">
+                                        <p>숙소</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">
+                                        <img src="../images/common/icon_plane.svg" alt="항공권 예약 페이지 아이콘">
+                                        <p>항공권</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">
+                                        <img src="../images/common/icon_car.svg" alt="렌터카 예약 페이지 아이콘">
+                                        <p>렌터카</p>
+                                    </a>
+                                </li>
+                            </ul> <!-- home_other -->
+                        </li>
+                        <li>
+                            <a href="#">객실예약</a>
+                        </li>
+                        <li>
+                            <a href="./sub.html">국내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">서울</a></li>
+                                        <li><a href="./sub.html">부산</a></li>
+                                        <li><a href="./sub.html">제주</a></li>
+                                        <li><a href="./sub.html">서귀포</a></li>
+                                        <li><a href="./sub.html">강릉</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">속초</a></li>
+                                        <li><a href="./sub.html">여수</a></li>
+                                        <li><a href="./sub.html">인천</a></li>
+                                        <li><a href="./sub.html">경주</a></li>
+                                        <li><a href="./sub.html">전주</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">양양</a></li>
+                                        <li><a href="./sub.html">대구</a></li>
+                                        <li><a href="./sub.html">거제</a></li>
+                                        <li><a href="./sub.html">대전</a></li>
+                                        <li><a href="./sub.html">평창</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">통영</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                            </ul> <!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="./sub.html">해외</a>
+                            <ul class="depth2">
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">타무닝</a></li>
+                                        <li><a href="./sub.html">방콕</a></li>
+                                        <li><a href="./sub.html">다낭</a></li>
+                                        <li><a href="./sub.html">파리</a></li>
+                                        <li><a href="./sub.html">도쿄</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">보라카이</a></li>
+                                        <li><a href="./sub.html">호치민</a></li>
+                                        <li><a href="./sub.html">세부</a></li>
+                                        <li><a href="./sub.html">호놀룰루</a></li>
+                                        <li><a href="./sub.html">오사카</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">냐짱</a></li>
+                                        <li><a href="./sub.html">런던</a></li>
+                                        <li><a href="./sub.html">뉴욕</a></li>
+                                        <li><a href="./sub.html">후쿠오카</a></li>
+                                        <li><a href="./sub.html">푸꾸옥</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">바르셀로나</a></li>
+                                        <li><a href="./sub.html">하노이</a></li>
+                                        <li><a href="./sub.html">파타야</a></li>
+                                        <li><a href="./sub.html">코타키나발루</a></li>
+                                        <li><a href="./sub.html">호이안</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub.html">일드프랑스</a></li>
+                                    </ul>
+                                </li>
+                            </ul> <!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul> <!-- gnb -->
+                </nav>
+
+                <ul class="util clearfix">
+                    <li>
+                        <span>KOREAN</span> <img src="../images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="util_list">
+                            <li><a href="../index.html">ENGLISH</a></li>
+                            <li><a href="../index.html">CHINESS</a></li>
+                            <li><a href="../index.html">JAPANESS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>￦ 원</span> <img src="../images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="util_list">
+                            <li>$ 달러</li>
+                            <li>Y 위안</li>
+                            <li>￥ 엔</li>
+                        </ul>
+                    </li>
+                </ul> <!-- util clearfix -->
+
+                <div class="ham"></div>
+            </div> <!-- inner -->
+
+            <div class="booking_wrap">
+                <div class="inner">
+                    <div class="booking">
+                        <input type="text" placeholder="지역명, 호텔명">
+                        <input type="date" value="2022-11-24" min="2022-11-24" max="2023-01-31"><input type="date"
+                            value="2022-11-25" min="2022-11-25" max="2023-01-31">
+                        <div>성인<input type="number" value="1" min="1" max="99"><span>명</span></div><input type="submit"
+                            value="검색">
+                    </div> <!-- booking -->
+                    <div class="btn_close"></div>
+                </div> <!-- inner -->
+            </div> <!-- booking_wrap -->
+
+            <div class="depth2_bg"></div>
+
+            <div class="mgnb_wrap">
+                <ul class="mgnb clearfix">
+                    <li>
+                        <div>
+                            <img src="../images/common/icon_hotel.svg" alt="호텔 예약 페이지  아이콘"> <img
+                                src="../images/common/arrow_down.svg" alt="더보기 버튼"></a>
+                        </div>
+                        <ul class="home_other">
+                            <li>
+                                <a href="../index.html">
+                                    <img src="../images/common/icon_hotel.svg" alt="호텔 예약 페이지 아이콘">
+                                    <p>숙소</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../index.html">
+                                    <img src="../images/common/icon_plane.svg" alt="항공권 예약 페이지 아이콘">
+                                    <p>항공권</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../index.html">
+                                    <img src="../images/common/icon_car.svg" alt="렌터카 예약 페이지 아이콘">
+                                    <p>렌터카</p>
+                                </a>
+                            </li>
+                        </ul> <!-- home_other -->
+                    </li>
+                    <li>
+                        <div>국내</div>
+                        <ul class="mdepth2">
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">서울</a></li>
+                                    <li><a href="./sub.html">부산</a></li>
+                                    <li><a href="./sub.html">제주</a></li>
+                                    <li><a href="./sub.html">서귀포</a></li>
+                                    <li><a href="./sub.html">강릉</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">속초</a></li>
+                                    <li><a href="./sub.html">여수</a></li>
+                                    <li><a href="./sub.html">인천</a></li>
+                                    <li><a href="./sub.html">경주</a></li>
+                                    <li><a href="./sub.html">전주</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">양양</a></li>
+                                    <li><a href="./sub.html">대구</a></li>
+                                    <li><a href="./sub.html">거제</a></li>
+                                    <li><a href="./sub.html">대전</a></li>
+                                    <li><a href="./sub.html">평창</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">통영</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                        </ul> <!-- depth2 -->
+                    </li>
+                    <li>
+                        <div>해외</div>
+                        <ul class="mdepth2">
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">타무닝</a></li>
+                                    <li><a href="./sub.html">방콕</a></li>
+                                    <li><a href="./sub.html">다낭</a></li>
+                                    <li><a href="./sub.html">파리</a></li>
+                                    <li><a href="./sub.html">도쿄</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">보라카이</a></li>
+                                    <li><a href="./sub.html">호치민</a></li>
+                                    <li><a href="./sub.html">세부</a></li>
+                                    <li><a href="./sub.html">호놀룰루</a></li>
+                                    <li><a href="./sub.html">오사카</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">냐짱</a></li>
+                                    <li><a href="./sub.html">런던</a></li>
+                                    <li><a href="./sub.html">뉴욕</a></li>
+                                    <li><a href="./sub.html">후쿠오카</a></li>
+                                    <li><a href="./sub.html">푸꾸옥</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">바르셀로나</a></li>
+                                    <li><a href="./sub.html">하노이</a></li>
+                                    <li><a href="./sub.html">파타야</a></li>
+                                    <li><a href="./sub.html">코타키나발루</a></li>
+                                    <li><a href="./sub.html">호이안</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub.html">일드프랑스</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!-- mdepth2 -->
+                    </li>
+                    <li>
+                        <div><a href="#">FAQ</a></div>
+                    </li>
+                </ul> <!-- mgnb -->
+
+                <ul class="m_util clearfix">
+                    <li>
+                        <span>KOREAN</span> <img src="../images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="m_util_list">
+                            <li><a href="../index.html">ENGLISH</a></li>
+                            <li><a href="../index.html">CHINESS</a></li>
+                            <li><a href="../index.html">JAPANESS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>￦ 원</span> <img src="../images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="m_util_list">
+                            <li>$ 달러</li>
+                            <li>Y 위안</li>
+                            <li>￥ 엔</li>
+                        </ul>
+                    </li>
+                </ul> <!-- m_util clearfix -->
+                <div class="mgnb_close"></div> <!-- mgnb_close -->
+            </div> <!-- m_gnb_wrap -->
+        </header>
+
+
+        <div class="contents">
+            <div class="inner">
+                <div class="list_option">
+                    <p>호텔스컴바인 추천순</p>
+                    <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                    <ul class="list_option_more">
+                        <li>호텔스컴바인 추천순</li>
+                        <li>가격순</li>
+                        <li>후기순</li>
+                        <li>거리순</li>
+                    </ul> <!-- list_option_more -->
+                </div> <!-- list_option -->
+
+                <div class="booking_option">
+                    <div class="option_title">
+                        <h3>세부 검색 옵션</h3>
+                        <img src="../images/common/arrow_down_white.svg" alt="옵션 토글 버튼">
+                    </div> <!-- option_title -->
+
+                    <ul class="option_list">
+                        <li>
+                            <div class="toggle_title">
+                                <h4>가격</h4>
+                                <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                            </div>
+                            <div class="option price">
+                                <input type="range" min="2" max="50" value="2" class="slider" id="priceSlider">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_title">
+                                <h4>후기 평점</h4>
+                                <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                            </div>
+                            <div class="option level">
+                                <button>0+</button>
+                                <button>6+</button>
+                                <button>7+</button>
+                                <button>8+</button>
+                                <button>9+</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_title">
+                                <h4>호텔 등급</h4>
+                                <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                            </div>
+                            <div class="option level">
+                                <button>1성급</button>
+                                <button>2성급</button>
+                                <button>3성급</button>
+                                <button>4성급</button>
+                                <button>5성급</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_title">
+                                <h4>무료 제공 서비스</h4>
+                                <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                            </div>
+                            <div class="option checkbox_area">
+                                <input type="checkbox" name="" id="c_box1" class="c_box">
+                                <label for="c_box1">
+                                    <p>조식 포함</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="c_box2" class="c_box">
+                                <label for="c_box2">
+                                    <p>무료 주차</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="c_box3" class="c_box">
+                                <label for="c_box3">
+                                    <p>무료 인터넷</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="c_box4" class="c_box">
+                                <label for="c_box4">
+                                    <p>무료 취소</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="c_box5" class="c_box">
+                                <label for="c_box5">
+                                    <p>무료 공항 셔틀</p>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_title">
+                                <h4>편의시설</h4>
+                                <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                            </div>
+                            <div class="option checkbox_area">
+                                <input type="checkbox" name="" id="cvs_box1" class="c_box">
+                                <label for="cvs_box1">
+                                    <p>수영장</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box2" class="c_box">
+                                <label for="cvs_box2">
+                                    <p>금연 객실</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box3" class="c_box">
+                                <label for="cvs_box3">
+                                    <p>레스토랑</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box4" class="c_box">
+                                <label for="cvs_box4">
+                                    <p>루프탑</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box5" class="c_box">
+                                <label for="cvs_box5">
+                                    <p>반려 동물 동반 가능</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box6" class="c_box">
+                                <label for="cvs_box6">
+                                    <p>스파</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box6" class="c_box">
+                                <label for="cvs_box6">
+                                    <p>와이파이</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box6" class="c_box">
+                                <label for="cvs_box6">
+                                    <p>에어컨</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box6" class="c_box">
+                                <label for="cvs_box6">
+                                    <p>주차</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="cvs_box6" class="c_box">
+                                <label for="cvs_box6">
+                                    <p>피트니스</p>
+                                </label>
+
+                                <div class="more_btn">
+                                    <p>+더보기</p>
+                                    <p>-접기</p>
+                                </div> <!-- more_btn -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_title">
+                                <h4>숙소 유형</h4>
+                                <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                            </div>
+                            <div class="option checkbox_area">
+                                <input type="checkbox" name="" id="type_box1" class="c_box">
+                                <label for="type_box1">
+                                    <p>호텔</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="type_box2" class="c_box">
+                                <label for="type_box2">
+                                    <p>게스트하우스</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="type_box3" class="c_box">
+                                <label for="type_box3">
+                                    <p>리조트</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="type_box4" class="c_box">
+                                <label for="type_box4">
+                                    <p>모텔</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="type_box5" class="c_box">
+                                <label for="type_box5">
+                                    <p>펜션</p>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_title">
+                                <h4>예약 사이트</h4>
+                                <img src="../images/common/arrow_down.svg" alt="옵션 토글 버튼">
+                            </div>
+                            <div class="option checkbox_area site">
+                                <input type="checkbox" name="" id="site_box1" class="c_box">
+                                <label for="site_box1">
+                                    <p>아고다</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box2" class="c_box">
+                                <label for="site_box2">
+                                    <p>부킹닷컴</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box3" class="c_box">
+                                <label for="site_box3">
+                                    <p>야놀자</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box4" class="c_box">
+                                <label for="site_box4">
+                                    <p>익스피디아</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box5" class="c_box">
+                                <label for="site_box5">
+                                    <p>트립닷컴</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box5" class="c_box">
+                                <label for="site_box5">
+                                    <p>트립비토즈</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box5" class="c_box">
+                                <label for="site_box5">
+                                    <p>호텔스닷컴</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box5" class="c_box">
+                                <label for="site_box5">
+                                    <p>호텔엔조이</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box5" class="c_box">
+                                <label for="site_box5">
+                                    <p>Hotelpass</p>
+                                </label>
+
+                                <input type="checkbox" name="" id="site_box5" class="c_box">
+                                <label for="site_box5">
+                                    <p>Onda.me</p>
+                                </label>
+                                
+                                <div class="more_btn">
+                                    <p>+더보기</p>
+                                    <p>-접기</p>
+                                </div> <!-- more_btn -->
+                            </div>
+                        </li>
+                    </ul> <!-- option_list -->
+                </div> <!-- booking_option -->
+            </div> <!-- inner -->
+        </div> <!-- contents -->
+
+        <footer id="footer">
+            <div class="cooper_wrap">
+                <div class="inner">
+                    <div class="cooperation">
+                        <img src="../images/common/tripcom.svg" alt="trip.com">
+                        <img src="../images/common/expedia.svg" alt="expedia">
+                        <img src="../images/common/hotelpass.svg" alt="호텔패스">
+                        <img src="../images/common/bookingcom.svg" alt="booking.com">
+                        <img src="../images/common/tripbtoz.svg" alt="tropbtoz">
+                        <img src="../images/common/yanolja.svg" alt="야놀자">
+                        <img src="../images/common/modetour.svg" alt="모두투어">
+                        <img src="../images/common/hotelscom.svg" alt="hotels.com">
+                    </div> <!-- cooperation -->
+                </div> <!-- inner -->
+            </div> <!-- cooper_wrap -->
+
+            <div class="footer_info">
+                <h2><a href="../index.html"><img src="../images/common/footer_logo.png" alt="Hotels Combined"></a></h2>
+                <ul class="footer_link clearfix">
+                    <li><a href="#">개인 정보 보호 정책</a></li>
+                    <li><a href="#">쿠키 정책</a></li>
+                    <li><a href="#">이용 약관</a></li>
+                </ul> <!-- footer_link -->
+                <p>호텔스컴바인은 세계적인 온라인 여행 기업 '부킹홀딩스(Booking Holdings Inc.)'의 그룹사입니다.</p>
+                <p class="copy">©2022 HotelsCombined</p>
+            </div> <!-- footer_info -->
+        </footer>
+
+        <div class="gotop"></div>
+    </div> <!-- wrap -->
+</body>
+
+</html>

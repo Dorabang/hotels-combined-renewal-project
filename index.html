@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels Combined</title>
+
+    <!--opengraph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hotels Combined">
+    <meta property="og:url" content="http://hotelscombined.dothome.co.kr">
+    <meta property="og:image" content="./images/common/hc_og.jpg">
+    <meta property="og:description" content="500만개 호텔 한번에 비교 예약, 최저가 보장!">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/common/hc_fav.ico">
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="./index.html"><img src="./images/common/logo.png" alt="Hotels Combined"></a></h1>
+                <nav>
+                    <ul class="gnb clearfix">
+                        <li>
+                            <img src="./images/common/icon_hotel.svg" alt="호텔 예약 페이지  아이콘"> <img
+                                src="./images/common/arrow_down.svg" alt="더보기 버튼"></a>
+                            <ul class="home_other">
+                                <li>
+                                    <a href="./index.html">
+                                        <img src="./images/common/icon_hotel.svg" alt="호텔 예약 페이지 아이콘">
+                                        <p>숙소</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./index.html">
+                                        <img src="./images/common/icon_plane.svg" alt="항공권 예약 페이지 아이콘">
+                                        <p>항공권</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./index.html">
+                                        <img src="./images/common/icon_car.svg" alt="렌터카 예약 페이지 아이콘">
+                                        <p>렌터카</p>
+                                    </a>
+                                </li>
+                            </ul> <!-- home_other -->
+                        </li>
+                        <li>
+                            <a href="#">객실예약</a>
+                        </li>
+                        <li>
+                            <a href="./sub/sub.html">국내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">서울</a></li>
+                                        <li><a href="./sub/sub.html">부산</a></li>
+                                        <li><a href="./sub/sub.html">제주</a></li>
+                                        <li><a href="./sub/sub.html">서귀포</a></li>
+                                        <li><a href="./sub/sub.html">강릉</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">속초</a></li>
+                                        <li><a href="./sub/sub.html">여수</a></li>
+                                        <li><a href="./sub/sub.html">인천</a></li>
+                                        <li><a href="./sub/sub.html">경주</a></li>
+                                        <li><a href="./sub/sub.html">전주</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">양양</a></li>
+                                        <li><a href="./sub/sub.html">대구</a></li>
+                                        <li><a href="./sub/sub.html">거제</a></li>
+                                        <li><a href="./sub/sub.html">대전</a></li>
+                                        <li><a href="./sub/sub.html">평창</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">통영</a></li>
+                                    </ul> <!-- kr_list -->
+                                </li>
+                            </ul> <!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="./sub/sub.html">해외</a>
+                            <ul class="depth2">
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">타무닝</a></li>
+                                        <li><a href="./sub/sub.html">방콕</a></li>
+                                        <li><a href="./sub/sub.html">다낭</a></li>
+                                        <li><a href="./sub/sub.html">파리</a></li>
+                                        <li><a href="./sub/sub.html">도쿄</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">보라카이</a></li>
+                                        <li><a href="./sub/sub.html">호치민</a></li>
+                                        <li><a href="./sub/sub.html">세부</a></li>
+                                        <li><a href="./sub/sub.html">호놀룰루</a></li>
+                                        <li><a href="./sub/sub.html">오사카</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">냐짱</a></li>
+                                        <li><a href="./sub/sub.html">런던</a></li>
+                                        <li><a href="./sub/sub.html">뉴욕</a></li>
+                                        <li><a href="./sub/sub.html">후쿠오카</a></li>
+                                        <li><a href="./sub/sub.html">푸꾸옥</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">바르셀로나</a></li>
+                                        <li><a href="./sub/sub.html">하노이</a></li>
+                                        <li><a href="./sub/sub.html">파타야</a></li>
+                                        <li><a href="./sub/sub.html">코타키나발루</a></li>
+                                        <li><a href="./sub/sub.html">호이안</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="d2_list">
+                                        <li><a href="./sub/sub.html">일드프랑스</a></li>
+                                    </ul>
+                                </li>
+                            </ul> <!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul> <!-- gnb -->
+                </nav>
+
+                <ul class="util clearfix">
+                    <li>
+                        <span>KOREAN</span> <img src="./images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="util_list">
+                            <li><a href="./index.html">ENGLISH</a></li>
+                            <li><a href="./index.html">CHINESS</a></li>
+                            <li><a href="./index.html">JAPANESS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>￦ 원</span> <img src="./images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="util_list">
+                            <li>$ 달러</li>
+                            <li>Y 위안</li>
+                            <li>￥ 엔</li>
+                        </ul>
+                    </li>
+                </ul> <!-- util clearfix -->
+
+                <div class="ham"></div>
+            </div> <!-- inner -->
+
+            <div class="booking_wrap">
+                <div class="inner">
+                    <div class="booking">
+                        <input type="text" placeholder="지역명, 호텔명">
+                        <input type="date" value="2022-11-24" min="2022-11-24" max="2023-01-31"><input type="date"
+                            value="2022-11-25" min="2022-11-25" max="2023-01-31"><div>성인<input type="number" value="1" min="1" max="99"><span>명</span></div><input type="submit" value="검색">
+                    </div> <!-- booking -->
+                    <div class="btn_close"></div>
+                </div> <!-- inner -->
+            </div> <!-- booking_wrap -->
+
+            <div class="depth2_bg"></div>
+
+            <div class="mgnb_wrap">
+                <ul class="mgnb clearfix">
+                    <li>
+                        <div>
+                            <img src="./images/common/icon_hotel.svg" alt="호텔 예약 페이지  아이콘"> <img
+                                src="./images/common/arrow_down.svg" alt="더보기 버튼"></a>
+                        </div>
+                        <ul class="home_other">
+                            <li>
+                                <a href="./index.html">
+                                    <img src="./images/common/icon_hotel.svg" alt="호텔 예약 페이지 아이콘">
+                                    <p>숙소</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html">
+                                    <img src="./images/common/icon_plane.svg" alt="항공권 예약 페이지 아이콘">
+                                    <p>항공권</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html">
+                                    <img src="./images/common/icon_car.svg" alt="렌터카 예약 페이지 아이콘">
+                                    <p>렌터카</p>
+                                </a>
+                            </li>
+                        </ul> <!-- home_other -->
+                    </li>
+                    <li>
+                        <div>국내</div>
+                        <ul class="mdepth2">
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">서울</a></li>
+                                    <li><a href="./sub/sub.html">부산</a></li>
+                                    <li><a href="./sub/sub.html">제주</a></li>
+                                    <li><a href="./sub/sub.html">서귀포</a></li>
+                                    <li><a href="./sub/sub.html">강릉</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">속초</a></li>
+                                    <li><a href="./sub/sub.html">여수</a></li>
+                                    <li><a href="./sub/sub.html">인천</a></li>
+                                    <li><a href="./sub/sub.html">경주</a></li>
+                                    <li><a href="./sub/sub.html">전주</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">양양</a></li>
+                                    <li><a href="./sub/sub.html">대구</a></li>
+                                    <li><a href="./sub/sub.html">거제</a></li>
+                                    <li><a href="./sub/sub.html">대전</a></li>
+                                    <li><a href="./sub/sub.html">평창</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">통영</a></li>
+                                </ul> <!-- kr_list -->
+                            </li>
+                        </ul> <!-- depth2 -->
+                    </li>
+                    <li>
+                        <div>해외</div>
+                        <ul class="mdepth2">
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">타무닝</a></li>
+                                    <li><a href="./sub/sub.html">방콕</a></li>
+                                    <li><a href="./sub/sub.html">다낭</a></li>
+                                    <li><a href="./sub/sub.html">파리</a></li>
+                                    <li><a href="./sub/sub.html">도쿄</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">보라카이</a></li>
+                                    <li><a href="./sub/sub.html">호치민</a></li>
+                                    <li><a href="./sub/sub.html">세부</a></li>
+                                    <li><a href="./sub/sub.html">호놀룰루</a></li>
+                                    <li><a href="./sub/sub.html">오사카</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">냐짱</a></li>
+                                    <li><a href="./sub/sub.html">런던</a></li>
+                                    <li><a href="./sub/sub.html">뉴욕</a></li>
+                                    <li><a href="./sub/sub.html">후쿠오카</a></li>
+                                    <li><a href="./sub/sub.html">푸꾸옥</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">바르셀로나</a></li>
+                                    <li><a href="./sub/sub.html">하노이</a></li>
+                                    <li><a href="./sub/sub.html">파타야</a></li>
+                                    <li><a href="./sub/sub.html">코타키나발루</a></li>
+                                    <li><a href="./sub/sub.html">호이안</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="d2_list">
+                                    <li><a href="./sub/sub.html">일드프랑스</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!-- mdepth2 -->
+                    </li>
+                    <li>
+                        <div><a href="#">FAQ</a></div>
+                    </li>
+                </ul> <!-- mgnb -->
+
+                <ul class="m_util clearfix">
+                    <li>
+                        <span>KOREAN</span> <img src="./images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="m_util_list">
+                            <li><a href="./index.html">ENGLISH</a></li>
+                            <li><a href="./index.html">CHINESS</a></li>
+                            <li><a href="./index.html">JAPANESS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>￦ 원</span> <img src="./images/common/arrow_down.svg" alt="더보기 버튼">
+                        <ul class="m_util_list">
+                            <li>$ 달러</li>
+                            <li>Y 위안</li>
+                            <li>￥ 엔</li>
+                        </ul>
+                    </li>
+                </ul> <!-- m_util clearfix -->
+                <div class="mgnb_close"></div> <!-- mgnb_close -->
+            </div> <!-- m_gnb_wrap -->
+        </header>
+
+        <main id="container">
+            <section id="main_visual">
+                <div class="inner">
+                    <div class="swiper mb">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide mb_1">
+                                <img src="./images/main/main_banner_pc.jpg" alt="500만개 호텔 한번에 비교 예약, 최저가 보장!">
+                                <img src="./images/main/main_banner_tablet.jpg" alt="500만개 호텔 한번에 비교 예약, 최저가 보장!">
+                                <img src="./images/main/main_banner_mobile.jpg" alt="500만개 호텔 한번에 비교 예약, 최저가 보장!">
+                            </li>
+                            <li class="swiper-slide mb_2">
+                                <img src="./images/main/main_banner2_pc.jpg" alt="롯데시티호텔 기획전 초특가 이벤트">
+                                <img src="./images/main/main_banner2_tablet.jpg" alt="롯데시티호텔 기획전 초특가 이벤트">
+                                <img src="./images/main/main_banner2_mobile.jpg" alt="롯데시티호텔 기획전 초특가 이벤트">
+                            </li>
+                            <li class="swiper-slide mb_3">
+                                <img src="./images/main/main_banner3_pc.jpg" alt="일본 특가 항공권">
+                                <img src="./images/main/main_banner3_tablet.jpg" alt="일본 특가 항공권">
+                                <img src="./images/main/main_banner3_mobile.jpg" alt="일본 특가 항공권">
+                            </li>
+                        </ul> <!-- swiper-wrapper -->
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+
+
+                        <div class="mb_play"><i class="bi bi-play-fill"></i></div>
+                        <div class="mb_pause"><i class="bi bi-pause-fill"></i></div>
+                    </div> <!-- swiper mb -->
+                </div> <!-- inner -->
+            </section> <!-- main_visual -->
+
+            <section id="near">
+                <div class="inner">
+                    <div class="sub_title">
+                        <p>지금 바로 예약 가능한</p>
+                        <h2>주변 숙소</h2>
+                        <p>11월 11일 금 ~ 11월 12일 토</p>
+                    </div> <!-- sub_title -->
+                    <div class="swiper near_list">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="near_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>8.7</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near1_1.jpg" alt="롯데 호텔 부산 사진">
+                                        <img src="./images/main/near1_2.jpg" alt="롯데 호텔 부산 사진">
+                                    </div> <!-- near_img -->
+                                    <div class="near_txt">
+                                        <h3>롯데 호텔 부산</h3>
+                                        <p>부산 진구</p>
+                                        <div class="bottom_txt">
+                                            <p>5성급</p>
+                                            <p>1박 <span>242,000</span>원</p>
+                                        </div> <!-- bottom_txt -->
+                                    </div> <!-- near_txt -->
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="near_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>8.1</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near2_1.jpg" alt="롯데 호텔 부산 사진">
+                                        <img src="./images/main/near2_2.jpg" alt="롯데 호텔 부산 사진">
+                                    </div> <!-- near_img -->
+                                    <div class="near_txt">
+                                        <h3>이비스 버젯 엠베서더 부산시티센터</h3>
+                                        <p>부산 진구</p>
+                                        <div class="bottom_txt">
+                                            <p>3성급</p>
+                                            <p>1박 <span>81,000</span>원</p>
+                                        </div> <!-- bottom_txt -->
+                                    </div> <!-- near_txt -->
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="near_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>7.7</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near3_1.jpg" alt="롯데 호텔 부산 사진">
+                                        <img src="./images/main/near3_2.jpg" alt="롯데 호텔 부산 사진">
+                                    </div> <!-- near_img -->
+                                    <div class="near_txt">
+                                        <h3>이비스 엠베서더 부산 해운대</h3>
+                                        <p>부산 해운대구</p>
+                                        <div class="bottom_txt">
+                                            <p>3성급</p>
+                                            <p>1박 <span>91,000</span>원</p>
+                                        </div> <!-- bottom_txt -->
+                                    </div> <!-- near_txt -->
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="near_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>8.4</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near4_1.jpg" alt="롯데 호텔 부산 사진">
+                                        <img src="./images/main/near4_2.jpg" alt="롯데 호텔 부산 사진">
+                                    </div> <!-- near_img -->
+                                    <div class="near_txt">
+                                        <h3>웨스턴 조선 부산</h3>
+                                        <p>부산 해운대구</p>
+                                        <div class="bottom_txt">
+                                            <p>5성급</p>
+                                            <p>1박 <span>287,100</span>원</p>
+                                        </div> <!-- bottom_txt -->
+                                    </div> <!-- near_txt -->
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="near_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>8.1</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near5_1.jpg" alt="라발스 호텔 사진">
+                                        <img src="./images/main/near5_2.jpg" alt="라발스 호텔 사진">
+                                    </div> <!-- near_img -->
+                                    <div class="near_txt">
+                                        <h3>라발스 호텔</h3>
+                                        <p>부산 영도구</p>
+                                        <div class="bottom_txt">
+                                            <p>4성급</p>
+                                            <p>1박 <span>100,000</span>원</p>
+                                        </div> <!-- bottom_txt -->
+                                    </div> <!-- near_txt -->
+                                </a>
+                            </li>
+                        </ul> <!-- swiper-wrapper -->
+
+                        <div class="swiper-scrollbar"></div>
+                    </div> <!-- swiper near_list -->
+                    <a href="#" class="btn_more">더보기</a>
+                </div> <!-- inner -->
+            </section> <!-- near -->
+
+            <section id="trip">
+                <div class="inner">
+                    <div class="sub_title">
+                        <p>최근 예약이 늘고 있는</p>
+                        <h2>인기 여행지 Top 4</h2>
+                        <p>다른 사용자들이 많이 찾는 여행지를 확인해보세요!</p>
+                    </div> <!-- sub_title -->
+                    <ul>
+                        <li>
+                            <div class="trip_txt">
+                                <h3>서울</h3>
+                                <p>예약 가능 숙소 4,698곳</p>
+                                <p class="btn_more"><a href="#">숙소 보기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="trip_txt">
+                                <h3>부산</h3>
+                                <p>예약 가능 숙소 1,774곳</p>
+                                <p class="btn_more"><a href="#">숙소 보기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="trip_txt">
+                                <h3>제주도</h3>
+                                <p>예약 가능 숙소 1,948곳</p>
+                                <p class="btn_more"><a href="#">숙소 보기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="trip_txt">
+                                <h3>여수</h3>
+                                <p>예약 가능 숙소 681곳</p>
+                                <p class="btn_more"><a href="#">숙소 보기</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn_more">더보기</a>
+                </div> <!-- inner -->
+            </section> <!-- trip -->
+
+            <section id="hot">
+                <div class="inner">
+                    <div class="sub_title">
+                        <p>최근 사랑 받고 있는</p>
+                        <h2>숙소 추천</h2>
+                        <p>요즘 많은 사용자들이 찾는 호텔을 지금 확인해보세요!</p>
+                    </div> <!-- sub_title -->
+
+                    <div class="hot_list">
+                        <div class="hot_top">
+                            <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                            <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                            <a href="#">
+                                <div class="hot_img">
+                                    <div class="score">
+                                        <img src="./images/common/icon_score.svg" alt="별점">
+                                        <p>8.7</p>
+                                    </div> <!-- score -->
+                                    <img src="./images/main/near1_1.jpg" alt="롯데 호텔 부산 사진">
+                                    <img src="./images/main/near1_2.jpg" alt="롯데 호텔 부산 사진">
+                                </div> <!-- hot_img -->
+                                <div class="hot_txt">
+                                    <h3>롯데 호텔 부산</h3>
+                                    <p>부산 진구</p>
+                                    <div class="bottom_txt">
+                                        <p>5성급</p>
+                                        <p>1박 <span>242,000</span>원</p>
+                                    </div> <!-- bottom_txt -->
+                                </div> <!-- hot_txt -->
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="hot_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>8.1</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near2_1.jpg" alt="롯데 호텔 부산 사진">
+                                        <img src="./images/main/near2_2.jpg" alt="롯데 호텔 부산 사진">
+                                    </div> <!-- hot_img -->
+                                    <div class="hot_txt">
+                                        <h3>이비스 버젯 엠베서더 부산시티센터</h3>
+                                        <p>1박 <span>81,000</span>원</p>
+                                    </div> <!-- hot_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="hot_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>7.7</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near3_1.jpg" alt="롯데 호텔 부산 사진">
+                                        <img src="./images/main/near3_2.jpg" alt="롯데 호텔 부산 사진">
+                                    </div> <!-- hot_img -->
+                                    <div class="hot_txt">
+                                        <h3>이비스 엠베서더 부산 해운대</h3>
+                                        <p>1박 <span>91,000</span>원</p>
+                                    </div> <!-- hot_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="hot_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>8.4</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near4_1.jpg" alt="롯데 호텔 부산 사진">
+                                        <img src="./images/main/near4_2.jpg" alt="롯데 호텔 부산 사진">
+                                    </div> <!-- hot_img -->
+                                    <div class="hot_txt">
+                                        <h3>웨스턴 조선 부산</h3>
+                                        <p>1박 <span>287,100</span>원</p>
+                                    </div> <!-- hot_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./images/common/icon_heart.svg" class="heart" alt="찜하기 버튼">
+                                <img src="./images/common/icon_heart_fill.svg" class="heart_fill" alt="찜하기 취소 버튼">
+                                <a href="#">
+                                    <div class="hot_img">
+                                        <div class="score">
+                                            <img src="./images/common/icon_score.svg" alt="별점">
+                                            <p>8.1</p>
+                                        </div> <!-- score -->
+                                        <img src="./images/main/near5_1.jpg" alt="라발스 호텔 사진">
+                                        <img src="./images/main/near5_2.jpg" alt="라발스 호텔 사진">
+                                    </div> <!-- hot_img -->
+                                    <div class="hot_txt">
+                                        <h3>라발스 호텔</h3>
+                                        <p>1박 <span>100,000</span>원</p>
+                                    </div> <!-- hot_txt -->
+                                </a>
+                            </li>
+                        </ul> <!-- hot_list -->
+                    </div>
+
+                    <a href="#" class="btn_more">더보기</a>
+                </div> <!-- inner -->
+            </section> <!-- hot -->
+        </main> <!-- container -->
+
+        <footer id="footer">
+            <div class="cooper_wrap">
+                <div class="inner">
+                    <div class="cooperation">
+                        <img src="./images/common/tripcom.svg" alt="trip.com">
+                        <img src="./images/common/expedia.svg" alt="expedia">
+                        <img src="./images/common/hotelpass.svg" alt="호텔패스">
+                        <img src="./images/common/bookingcom.svg" alt="booking.com">
+                        <img src="./images/common/tripbtoz.svg" alt="tropbtoz">
+                        <img src="./images/common/yanolja.svg" alt="야놀자">
+                        <img src="./images/common/modetour.svg" alt="모두투어">
+                        <img src="./images/common/hotelscom.svg" alt="hotels.com">
+                    </div> <!-- cooperation -->
+                </div> <!-- inner -->
+            </div> <!-- cooper_wrap -->
+
+            <div class="footer_info">
+                <h2><a href="./index.html"><img src="./images/common/footer_logo.png" alt="Hotels Combined"></a></h2>
+                <ul class="footer_link clearfix">
+                    <li><a href="#">개인 정보 보호 정책</a></li>
+                    <li><a href="#">쿠키 정책</a></li>
+                    <li><a href="#">이용 약관</a></li>
+                </ul> <!-- footer_link -->
+                <p>호텔스컴바인은 세계적인 온라인 여행 기업 '부킹홀딩스(Booking Holdings Inc.)'의 그룹사입니다.</p>
+                <p class="copy">©2022 HotelsCombined</p>
+            </div> <!-- footer_info -->
+        </footer>
+
+        <div class="gotop"></div>
+    </div> <!-- wrap -->
+</body>
+
+</html>

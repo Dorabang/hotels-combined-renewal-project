@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+html { font-size: 62.5%; } /* 10px */
+
+/* 여백 초기화 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* 테이블선 중첩 */
+table { border-collapse: collapse; width: 100%; }
+
+/* 리스트 스타일 */
+ol, ul { list-style: none; }
+
+/* 하이퍼링크 스타일 */
+a { text-decoration: none; color: #333; }
+
+/* 글자 기울기 */
+address, em, i { font-style: normal; }
+
+/* 폼 그룹 테두리 없애기 */
+fieldset, input, select { border: 0; vertical-align: middle; outline: 0; }
+
+/* 폼그룹명 안 보이게 */
+legend, caption { display: none; }
