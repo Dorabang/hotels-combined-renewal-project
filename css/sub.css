@@ -196,6 +196,7 @@ body { font-family: 'Pretendard'; font-size: 1.6rem; color: #333; line-height: 1
 
 /* contents */
 .contents { background: #fafafa; padding: 50px 0 150px; }
+.contents .inner .sub_content { display: flex; justify-content: space-between; align-items: flex-start; }
 
 
 /* list_option */
@@ -284,6 +285,27 @@ body { font-family: 'Pretendard'; font-size: 1.6rem; color: #333; line-height: 1
     cursor: pointer; /* Cursor on hover */
   }
 
+
+/* hotel */
+.hotel { width: calc(100% - 435px); }
+.hotel .h_list { height: 500px; width: 100%; border: 1px solid #ddd; padding: 40px; display: flex; justify-content: space-between; align-items: flex-start; }
+.hotel .h_list .h_img1 { position: relative; width: 50%; height: 420px; }
+.hotel .h_list .h_img1 img { width: 100%; height: 100%; object-fit: cover; }
+
+.hotel .h_list .h_img1 .heart { width: 24px; position: absolute; left: 20px; top: 20px; z-index: 9; }
+.hotel .h_list .h_img1 .heart img { position: absolute; left: 0; top: 0; }
+
+.hotel .h_list .h_info { width: 50%; padding-left: 20px; }
+.hotel .h_list .h_info .title_wrap { display: flex; justify-content: space-between; margin-bottom: 60px; }
+.hotel .h_list .h_info .h_title h3 { margin-bottom: 4px; font-size: 1.8rem; }
+.hotel .h_list .h_info .h_level { text-align: right; }
+.hotel .h_list .h_info .h_level .review { background: url(../images/common/icon_score.svg) no-repeat 0 center; padding-left: 30px; }
+
+.hotel .h_list .h_info .site { width: 100%; height: 80px; border-radius: 10px; border: 1px solid #ddd; padding: 25px; margin-bottom: 20px; }
+.hotel .h_list .h_info div.site:last-child { margin-bottom: 0; }
+.hotel .h_list .h_info .site img { width: 60px; }
+.hotel .h_list .h_info .site p { display: inline-block; }
+.hotel .h_list .h_info .site p:nth-of-type(1) { margin-left: 20px; }
 
 
 
