@@ -198,11 +198,6 @@ $(document).ready(function () {
     speed: 2000, // 슬라이드 동작 속도
     loop: true, // 슬라이드 반복 여부
 
-    autoplay: {
-      delay: 5000, // 슬라이드가 머무르는 시간, 5000=5초
-      disableOnInteraction: false, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
-    },
-
     pagination: {
       el: ".swiper-pagination",
     },
@@ -213,13 +208,5 @@ $(document).ready(function () {
     },
 
   });
-
-  $(".h_img1").mouseenter(function () {
-    h_img.autoplay.stop();
-  });
-
-  $(".h_img1").mouseleave(function () {
-    h_img.autoplay.start();
-  });
-
+  
 });
