@@ -37,7 +37,7 @@ body { font-family: 'Pretendard'; font-size: 1.6rem; color: #333; line-height: 1
 
 
 #header .gnb > li:nth-child(1) { display: flex; align-items: center; padding: 10px 40px; position: relative; }
-#header .gnb .home_other { position: absolute; left: 50%; top: 79px; transform: translateX(-50%); z-index: 8; width: 200px; padding: 20px 0; background: #fff; border: 1px solid #ddd; }
+#header .gnb .home_other { position: absolute; left: 50%; top: 80px; transform: translateX(-50%); z-index: 8; width: 200px; padding: 20px 0; background: #fff; border: 1px solid #ddd; }
 #header .gnb .home_other a { padding: 3px 40px; display: flex; justify-content: center; }
 #header .gnb .home_other li:nth-child(1) p { padding-right: 17px; }
 #header .gnb .home_other img { padding-right: 10px; width: 40px; }
@@ -125,7 +125,7 @@ body { font-family: 'Pretendard'; font-size: 1.6rem; color: #333; line-height: 1
 
 #header .util > li { float: left; margin: 0 20px; position: relative; cursor: pointer; }
 #header .util > li img { width: 18px; height: 18px; }
-#header .util > li .util_list { position: absolute; left: 50%; top: 61px; transform: translateX(-50%); width: 120px; background: #fff; border: 1px solid #ddd; padding: 20px; text-align: center; z-index: 5; }
+#header .util > li .util_list { position: absolute; left: 50%; top: 62px; transform: translateX(-50%); width: 120px; background: #fff; border: 1px solid #ddd; padding: 20px; text-align: center; z-index: 5; }
 #header .util > li img { transition: transform 0.5s; }
 #header .util > li img.active { transform: rotate(180deg); }
 
