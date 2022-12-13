@@ -194,26 +194,32 @@ $(document).ready(function () {
   $(".booking_option .site").hide();
 
   // hotel h_img
-  var h_img1 = new Swiper(".h_img1", {
-    speed: 1500, // 슬라이드 동작 속도
+  var h_img = new Swiper(".h_img1", {
+    speed: 2000, // 슬라이드 동작 속도
     loop: true, // 슬라이드 반복 여부
 
     autoplay: {
-      delay: 3000, // 슬라이드가 머무르는 시간, 5000=5초
+      delay: 5000, // 슬라이드가 머무르는 시간, 5000=5초
       disableOnInteraction: false, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
     },
 
     pagination: {
       el: ".swiper-pagination",
     },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
   });
 
   $(".h_img1").mouseenter(function () {
-    h_img1.autoplay.stop();
+    h_img.autoplay.stop();
   });
 
   $(".h_img1").mouseleave(function () {
-    h_img1.autoplay.start();
+    h_img.autoplay.start();
   });
 
 });
