@@ -304,8 +304,12 @@ body { font-family: 'Pretendard'; font-size: 1.6rem; color: #333; line-height: 1
 .hotel .h_list .h_info .site { width: 100%; height: 80px; border-radius: 10px; border: 1px solid #ddd; padding: 25px; margin-bottom: 20px; }
 .hotel .h_list .h_info div.site:last-child { margin-bottom: 0; }
 .hotel .h_list .h_info .site img { width: 60px; }
-.hotel .h_list .h_info .site p { display: inline-block; }
-.hotel .h_list .h_info .site p:nth-of-type(1) { margin-left: 20px; }
+.hotel .h_list .h_info .site p { display: inline-block; margin-left: 20px; }
+.hotel .h_list .h_info .site p:nth-of-type(1) { }
+.hotel .h_list .h_info .site p:nth-of-type(2) { text-decoration: line-through; color: #999; margin-left: 80px; }
+.hotel .h_list .h_info .site p:nth-of-type(3) { font-weight: 700; font-size: 1.8rem; position: relative; margin-left: 40px; padding-left: 10px; }
+.hotel .h_list .h_info .site p:nth-of-type(3)::before { content: ''; display: block; width: 1px; height: 80px; position: absolute; left: -20px; top: -24px; background: #ddd; }
+.hotel .h_list .h_info .site p:nth-of-type(3) span { font-size: 1.6rem; }
 
 
 
