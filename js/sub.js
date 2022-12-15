@@ -182,10 +182,10 @@ $(document).ready(function () {
   $(".booking_option .more_btn p:nth-of-type(2)").hide();
   $(".booking_option .more_btn p").click(function () {
     $(this).siblings().fadeIn().siblings().fadeOut();
-    $(
+    $(this).parents().siblings(
       ".booking_option input[type=checkbox].c_box + label:nth-of-type(n+6)"
     ).slideToggle();
-    $(
+    $(this).parents().siblings(
       ".booking_option input[type=checkbox].c_box + label:nth-of-type(n+6)::before"
     ).slideToggle();
   });
@@ -208,5 +208,5 @@ $(document).ready(function () {
     },
 
   });
-  
+
 });
